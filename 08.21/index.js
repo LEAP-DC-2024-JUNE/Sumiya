@@ -285,7 +285,7 @@ while (i < array.length) {
 }
 
 console.log(sumofarray);*/
-{ let i=0;
+/*{ let i=0;
 let sumofI=0;
 while (i<=3) {
     sumofI += i
@@ -298,5 +298,81 @@ for (let i=array.length-1; i>=0; i--) {
     console.log(array[i]);
 }
 {
-    
+    let array = [
+        {
+            name: "Bill",
+            age:10,
+            siblings: [
+                {
+                    name: "Bolor",
+                    age:11,
+                }
+                {
+                    name: "Boldoo",
+                    age:9,
+                }
+            ]
+        }
+    ]
+    console.log(array[0].siblings[1].name)
 }
+let arrayname = [
+    [
+        {
+            name :"Bill",
+        },
+        {
+            name: "Dul",
+        }
+    ],
+    [
+        {
+          name: "Sumiya",
+        },
+        {
+          name: "Anar",
+        }
+    ]
+]
+console.log(arrayname[0][1].name)*/
+
+{
+    let array = [1,2,3,4,5];
+    let result = []
+    for (let i=array.length-1; i>=0; i--) [
+        result[result.length]= array[i]
+    ]
+    console.log(result)
+}
+{
+    let array = [1,2,3,4,5]
+    array.reverse();
+    console.log(array)
+}
+{
+    let array = [2,1,0,3,5]
+    console.log(array.sort())
+}
+{
+    let fruits = ["Banana", "Apple", "Orange"]
+    console.log(fruits.toString())
+}
+let array = [100, 200]
+console.log(array.includes(200))
+{ let array = [1, 2, 3];
+    array.push(4)
+    console.log(array)
+}
+{
+    let array = [1, 2, 3];
+    array.pop()
+    console.log(array)
+}
+let n=2;
+let mult=0;
+let result=0;
+while(mult>=0, result<1000) {
+    result=n**mult
+    mult++;
+}
+console.log(result)
