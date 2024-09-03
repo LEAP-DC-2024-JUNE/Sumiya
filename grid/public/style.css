@@ -1,3 +1,7 @@
+body {
+    margin:0px;
+    padding:0px;
+}
 .main {
     display:grid;
     height:100%;
@@ -37,7 +41,6 @@
 .box-6 {
     grid-row-start: 3;
     grid-row-end: 4;
-    background-color:
 }
 .box-7 {
     grid-row-start: 3;

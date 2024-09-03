@@ -334,23 +334,22 @@ let arrayname = [
         }
     ]
 ]
-console.log(arrayname[0][1].name)*/
-
+console.log(arrayname[0][1].name)
 {
-    let array = [1,2,3,4,5];
+    let array = [1, 2, 3, 4, 5];
     let result = []
-    for (let i=array.length-1; i>=0; i--) [
-        result[result.length]= array[i]
+    for (let i = array.length - 1; i >= 0; i--) [
+        result[result.length] = array[i]
     ]
     console.log(result)
 }
 {
-    let array = [1,2,3,4,5]
+    let array = [1, 2, 3, 4, 5]
     array.reverse();
     console.log(array)
 }
 {
-    let array = [2,1,0,3,5]
+    let array = [2, 1, 0, 3, 5]
     console.log(array.sort())
 }
 {
@@ -359,20 +358,37 @@ console.log(arrayname[0][1].name)*/
 }
 let array = [100, 200]
 console.log(array.includes(200))
-{ let array = [1, 2, 3];
+{
+    let array = [1, 2, 3];
     array.push(4)
     console.log(array)
 }
+
 {
     let array = [1, 2, 3];
     array.pop()
     console.log(array)
 }
+
+
+
+let n = 4;
+let mult = 0;
+let result = 0;
+while (mult >= 0, result < 1000) {
+    result = n ** mult
+    mult++;
+}
+console.log(mult) */
 let n=2;
 let mult=0;
 let result=0;
-while(mult>=0, result<1000) {
+while (mult >=0) {
     result=n**mult
+    if (result > 1000)
+    {
+        break;
+    }
     mult++;
 }
-console.log(result)
+console.log(mult)
