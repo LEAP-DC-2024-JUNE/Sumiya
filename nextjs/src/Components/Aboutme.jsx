@@ -2,14 +2,18 @@ import Pic from "../../public/Pic.png";
 import Image from "next/image";
 function Aboutme() {
   return (
-    <div className="w-full bg-gray-100">
-      <div className=" box-border py-24 px-40 flex flex-col gap-10">
+    <div className=" bg-gray-100 dark:bg-[rgb(17,24,39,1)] mt-12">
+      <div className="flex-1">
         <div className="text-center">
-          <button className="bg-gray-300 rounded-3xl w-28 h-7">About me</button>
+          <button className="bg-gray-300 rounded-3xl w-28 h-7 dark:bg-[rgb(55,65,81,1)]">
+            About me
+          </button>
         </div>
-        <div className="flex justify-between">
-          <Image src={Pic} />
-          <div className="flex flex-col w-1/2 gap-6">
+        <div className="flex flex-col gap-12 lg:flex-row justify-center">
+          <div>
+            <Image src={Pic} />
+          </div>
+          <div className="flex flex-col gap-6 lg:w-1/2">
             <h2 className="text-3xl font-bold">
               Curious about me? Here you have it:
             </h2>

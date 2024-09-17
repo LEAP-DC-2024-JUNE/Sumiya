@@ -1,60 +1,61 @@
 {
-    let a = 10;
-    let b = 10;
-    let c = 10;
-    let x = (a + b + c) / 2;
-    let area = Math.sqrt((x * (x - a) * (x - b) * (x - c)))
-    console.log(area)
+  let a = 10;
+  let b = 10;
+  let c = 10;
+  let x = (a + b + c) / 2;
+  let area = Math.sqrt(x * (x - a) * (x - b) * (x - c));
+  console.log(area);
 }
 {
-    let x = 2;
-    let faranheit = x * 2 + 30;
-    console.log(faranheit)
+  let x = 2;
+  let faranheit = x * 2 + 30;
+  console.log(faranheit);
 }
 {
-    let f = 100;
-    let celcius = (f - 30) / 2;
-    console.log(celcius)
+  let f = 100;
+  let celcius = (f - 30) / 2;
+  console.log(celcius);
 }
 {
-    let cm = 10;
-    let inch = cm / 2.54;
-    console.log(inch);
+  let cm = 10;
+  let inch = cm / 2.54;
+  console.log(inch);
 }
 {
-    let inch = 12;
-    let cm = 12 * 2.54;
-    console.log(cm);
+  let inch = 12;
+  let cm = 12 * 2.54;
+  console.log(cm);
 }
 {
-    let a = 20, b = 10;
-    let result = a > b;
-    console.log(result);
+  let a = 20,
+    b = 10;
+  let result = a > b;
+  console.log(result);
 }
 {
-    let a = 20;
-    let b = 10;
-    let result = a != b;
-    console.log(result);
+  let a = 20;
+  let b = 10;
+  let result = a != b;
+  console.log(result);
 }
 let a = 16;
 let b = 15;
 if (a < b) {
-    console.log("a is less than b")
+  console.log("a is less than b");
 }
 if (b < a) {
-    console.log("b is less than a")
+  console.log("b is less than a");
 }
 {
-    let a = 30;
-    let b = 10;
-    let c = 10;
-    if (a + b > c && a + c > b && b + c > a) {
-        console.log("Triangle is true")
-    }
-    if (a + b <= c || a + c <= b || b + c <= a) {
-        console.log("Triangle is false")
-    }
+  let a = 30;
+  let b = 10;
+  let c = 10;
+  if (a + b > c && a + c > b && b + c > a) {
+    console.log("Triangle is true");
+  }
+  if (a + b <= c || a + c <= b || b + c <= a) {
+    console.log("Triangle is false");
+  }
 }
 /*let count=1;
 while (count <=100 ) {
@@ -70,85 +71,82 @@ while (count <=10) {
     count=count+1;
 }*/
 {
-    let sum = 0;
-    let count = 1;
+  let sum = 0;
+  let count = 1;
 
-    while (count <= 10) {
-        sum += count;
-        count++;
-    }
+  while (count <= 10) {
+    sum += count;
+    count++;
+  }
 
-    console.log(sum);
+  console.log(sum);
 }
 {
-    let sum = 0;
-    let count = 1;
-    while (count <= 100) {
-        if (count % 2 == 0)
-            sum += count;
-        count = count + 1;
-    }
-    console.log(sum);
+  let sum = 0;
+  let count = 1;
+  while (count <= 100) {
+    if (count % 2 == 0) sum += count;
+    count = count + 1;
+  }
+  console.log(sum);
 }
 {
-    let sum = 0;
-    let count = 1;
-    while (count <= 100) {
-        if (count % 2 == 1)
-            sum += count;
-        count = count + 1;
-    }
-    console.log(sum);
+  let sum = 0;
+  let count = 1;
+  while (count <= 100) {
+    if (count % 2 == 1) sum += count;
+    count = count + 1;
+  }
+  console.log(sum);
 }
 {
-    let count = "*"
-    while (count <= "*****") {
-        {
-            console.log(count)
-        }
-        count = count + "*";
+  let count = "*";
+  while (count <= "*****") {
+    {
+      console.log(count);
     }
+    count = count + "*";
+  }
 }
 {
-    let sum = 0;
-    let count = 1;
-    while (count <= 100) {
-        if (count % 3 == 0) {
-            sum += count;
-        }
-        count = count + 1;
+  let sum = 0;
+  let count = 1;
+  while (count <= 100) {
+    if (count % 3 == 0) {
+      sum += count;
     }
-    console.log(sum);
+    count = count + 1;
+  }
+  console.log(sum);
 }
 let sum = 0;
 let count = 1;
 while (count <= 100) {
-    if (count % 5 == 0) {
-        sum += count;
-    }
-    count = count + 1;
+  if (count % 5 == 0) {
+    sum += count;
+  }
+  count = count + 1;
 }
 console.log(sum);
 {
-    let sum = 1;
-    let count = 1;
-    while (count <= 10) {
-        {
-            sum = sum * count
-        }
-        count = count + 1;
+  let sum = 1;
+  let count = 1;
+  while (count <= 10) {
+    {
+      sum = sum * count;
     }
-    console.log(sum);
+    count = count + 1;
+  }
+  console.log(sum);
 }
 {
-    let count = 3;
-    while (count <= 37) {
-        if (count % 5 == 0) {
-            console.log(count)
-        }
-        count = count + 1;
+  let count = 3;
+  while (count <= 37) {
+    if (count % 5 == 0) {
+      console.log(count);
     }
-
+    count = count + 1;
+  }
 }
 /*{
     let num=2024;
@@ -272,7 +270,6 @@ let average=sumofnumbers/5
 console.log(average)
 */
 
-
 /*const array = [2, -3, 5, 6, -8, 10];
 
 let i = 0;
@@ -380,7 +377,7 @@ while (mult >= 0, result < 1000) {
     mult++;
 }
 console.log(mult) */
-let n=2;
+/*let n=2;
 let mult=0;
 let result=0;
 while (mult >=0) {
@@ -391,4 +388,139 @@ while (mult >=0) {
     }
     mult++;
 }
-console.log(mult)
+console.log(mult)*/
+/*const arr = [1, 0, 2, 5];
+let sumofnumbers = 0;
+arr.map((element) => {
+  sumofnumbers = sumofnumbers + element;
+});
+console.log(sumofnumbers);*/
+
+/*const arr = [2, 5, 100];
+
+arr.map((index) => {
+  index = index ** 2;
+  console.log(index);
+});*/
+// function doubleNumbers(array) {
+//   let newarray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     newarray.push(array[i] * 2);
+//   }
+//   return newarray;
+// }
+// console.log(doubleNumbers([2, 5, 100]));
+// function doubleNumbers(array) {
+//   const result = array.map((element) => {
+//     return element * 2;
+//   });
+//   return result;
+// }
+// console.log(doubleNumbers([2, 5, 100]));
+// function stringItUp(arr) {
+//   const result = arr.map((element) => {
+//     return element.toString();
+//   });
+//   return result;
+// }
+
+// console.log(stringItUp([2, 5, 100]));
+// function capitalizeNames(arr) {
+//   const result = arr.map((element) => {
+//     return element.toUpperCase();
+//   });
+//   return result;
+// }
+
+// console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+// function namesOnly(information) {
+//   const names = information.map((info) => {
+//     return info.name;
+//   });
+//   return names;
+// }
+
+// console.log(
+//   namesOnly([
+//     {
+//       name: "Angelina Jolie",
+//       age: 80,
+//     },
+//     {
+//       name: "Eric Jones",
+//       age: 2,
+//     },
+//     {
+//       name: "Paris Hilton",
+//       age: 5,
+//     },
+//     {
+//       name: "Kayne West",
+//       age: 16,
+//     },
+//     {
+//       name: "Bob Ziroll",
+//       age: 100,
+//     },
+//   ])
+// );
+// function makeStrings(information) {
+//   const result = information.map((info) => {
+//     if (info.age >= 18) {
+//       return "${info.name} + can go to Matrix";
+//     } else {
+//       return "${info.name} + under age";
+//     }
+//   });
+//   return result;
+// }
+
+// console.log(
+//   makeStrings([
+//     {
+//       name: "Angelina Jolie",
+//       age: 80,
+//     },
+//     {
+//       name: "Eric Jones",
+//       age: 2,
+//     },
+//     {
+//       name: "Paris Hilton",
+//       age: 5,
+//     },
+//     {
+//       name: "Kayne West",
+//       age: 16,
+//     },
+//     {
+//       name: "Bob Ziroll",
+//       age: 100,
+//     },
+//   ])
+// );
+function readyToPutInTheDOM(arr) {}
+console.log(
+  readyToPutInTheDOM([
+    {
+      name: "Angelina Jolie",
+      age: 80,
+    },
+    {
+      name: "Eric Jones",
+      age: 2,
+    },
+    {
+      name: "Paris Hilton",
+      age: 5,
+    },
+    {
+      name: "Kayne West",
+      age: 16,
+    },
+    {
+      name: "Bob Ziroll",
+      age: 100,
+    },
+  ])
+);
