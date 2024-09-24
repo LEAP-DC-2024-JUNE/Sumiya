@@ -8,12 +8,12 @@ import Figma from "../Logos/Figma";
 function Main({ theme }) {
   console.log(theme);
   return (
-    <div className="w-full mt-12">
-      <div className="flex flex-col-reverse lg:flex-row lg:justify-between lg:my-20 lg:mx-24">
-        <div className="flex flex-col lg:w-1/2 gap-12">
+    <div className="mt-12 max-w-full">
+      <div className="flex flex-col-reverse gap-6 mx-4 lg:flex-row lg:justify-between lg:my-20 lg:mx-20">
+        <div className="flex flex-col lg:w-1/2 lg:gap-12 gap-6 ">
           <div className="flex flex-col gap-2">
             <h1 className="text-6xl font-bold">Hi, I'm Tom 👋</h1>
-            <p>
+            <p className="overflow-clip">
               I specialize in full stack development, particularly with React.js
               and Node.js. My main goal is to create exceptional digital
               experiences that are fast, visually appealing, and accessible to

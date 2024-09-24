@@ -13,32 +13,28 @@ import Sassicon from "@/Icons/Sassicon";
 
 function Skill({ theme }) {
   return (
-    <div className="flex flex-col mt-12">
-      <div className="flex flex-col items-center">
+    <div className="flex flex-col gap-4 mt-12 items-center lg:mx-20 mx-4">
+      <div className="flex flex-col gap-4 items-center">
         <button className="bg-gray-200  rounded-3xl dark:bg-[rgb(55,65,81,1)] w-24 h-6 ">
           Skills
         </button>
-        <p className="text-lg ">
+        <p className="text-lg">
           The skills, tools and technologies I am really good at:
         </p>
       </div>
-      <div className="flex-1">
-        <div className="flex lg:flex lg:gap-24">
-          <Javaicon theme={theme} />
-          <Typeicon theme={theme} />
-          <Reacticon theme={theme} />
-          <Nodeicon theme={theme} />
-          <Expressicon theme={theme} />
-          <Nesticon theme={theme} />
-        </div>
-        <div className=" flex lg:flex lg:gap-24">
-          <Mongoicon theme={theme} />
-          <Tailwindicon theme={theme} />
-          <Cypressicon theme={theme} />
-          <Storyicon theme={theme} />
-          <Giticon theme={theme} />
-          <Sassicon theme={theme} />
-        </div>
+      <div className="flex flex-wrap gap-14 justify-center">
+        <Javaicon theme={theme} />
+        <Typeicon theme={theme} />
+        <Reacticon theme={theme} />
+        <Nodeicon theme={theme} />
+        <Expressicon theme={theme} />
+        <Nesticon theme={theme} />
+        <Mongoicon theme={theme} />
+        <Tailwindicon theme={theme} />
+        <Cypressicon theme={theme} />
+        <Storyicon theme={theme} />
+        <Giticon theme={theme} />
+        <Sassicon theme={theme} />
       </div>
     </div>
   );

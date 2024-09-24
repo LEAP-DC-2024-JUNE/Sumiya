@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
 import { useTheme } from "next-themes";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const { setTheme, theme } = useTheme();
@@ -23,12 +24,15 @@ export default function Home() {
   //   lastName: "Billy",
   // };
   return (
-    <div className="m-0 max-w-7xl">
+    <div className="m-0 max-w-7xl w-screen">
       <header>
         <div className="flex justify-around ">
           <div className="text-3xl font-bold">Tom</div>
-          <div className=" flex gap-2   items-center lg:gap-12">
-            <ul className=" flex gap-2 marker:lg:flex lg:gap-12 ">
+          <div className="lg:hidden ">
+            <Navbar theme={theme} />
+          </div>
+          <div className="hidden lg:flex  lg:flex-row lg:gap-12">
+            <ul className=" lg:flex lg:flex-row lg:gap-12 ">
               <li>About</li>
               <li>Work</li>
               <li>Testimonials</li>

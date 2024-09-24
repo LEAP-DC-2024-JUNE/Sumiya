@@ -9,12 +9,12 @@ function Aboutme() {
             About me
           </button>
         </div>
-        <div className="flex flex-col gap-12 lg:flex-row justify-center">
+        <div className="flex flex-col gap-12 lg:flex-row justify-center mt-5 mx-4 lg:mx-20">
           <div>
             <Image src={Pic} />
           </div>
-          <div className="flex flex-col gap-6 lg:w-1/2">
-            <h2 className="text-3xl font-bold">
+          <div className="flex flex-col gap-6 lg:w-1/2 flex-wrap">
+            <h2 className="text-3xl font-bold text-wrap">
               Curious about me? Here you have it:
             </h2>
             <p>

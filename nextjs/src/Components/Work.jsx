@@ -76,8 +76,8 @@ export const Work = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-10 mt-12">
-      <div className="self-center">
+    <div className="flex flex-col  items-center gap-10 mt-12">
+      <div className="flex flex-col gap-5 justify-center items-center">
         <button className="rounded-xl bg-gray-200  dark:bg-[rgb(55,65,81,1)]  py-1 px-5">
           Work
         </button>

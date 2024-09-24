@@ -25,7 +25,6 @@ function Cat({ theme }) {
         />
       </svg>
     );
-
   return (
     <svg
       width="24"
