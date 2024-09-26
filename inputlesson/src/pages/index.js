@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 export default function Home() {
+  const [memberShip, setmemberShip] = useState("");
+  const handleRadio = (param1) => {
+    setmemberShip(param1);
+  };
   return (
     <div className="max-w-3xl flex flex-col gap-4">
       <div className="font-bold text-2xl">New Member Registration</div>
@@ -95,15 +101,31 @@ export default function Home() {
         <span className="font-bold">
           Membership Type<span className="text-red-600">*</span>
           <div className="flex gap-2">
-            <input type="radio"></input>
+            <input
+              type="radio"
+              name="membershipType"
+              value={"Standart"}
+              onChange={(event) => handleRadio(event.target.value)}
+            ></input>
             <span>Standart</span>
-            <input type="radio"></input>
-            <span>Standart</span>
-            <input type="radio"></input>
-            <span>Standart</span>
+            <input
+              type="radio"
+              name="membershipType"
+              value={"Premium"}
+              onChange={(event) => handleRadio(event.target.value)}
+            ></input>
+            <span>Premium</span>
+            <input
+              type="radio"
+              name="membershipType"
+              value={"Classic"}
+              onChange={(event) => handleRadio(event.target.value)}
+            ></input>
+            <span>Classic</span>
           </div>
         </span>
       </div>
+      <button onClick={() => console.log(memberShip)}>Submit</button>
     </div>
   );
 }

@@ -3,8 +3,7 @@
 // import Vip from "../components/Vip";
 // import Items from "../components/Items";
 // // import Items from "../components/Items";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 export const Home = () => {
   //   let loggedin = true;
   //   let isVip = false;
@@ -22,23 +21,32 @@ export const Home = () => {
   // const handleClick = () => {
   //   setClick(<div className="border-2 bg-green-500">Off</div>);
   // };
-  const array = [1, 2, 3, 4];
-  const info = [
-    {
-      name: "Dul",
-      age: 18,
-    },
-    {
-      name: "Sumiya",
-      age: "19",
-    },
-  ];
-  const filteredinfo = info.filter((element) => {
-    return element.age > 18;
-  });
+  // const array = [1, 2, 3, 4];
+  // const info = [
+  //   {
+  //     name: "Dul",
+  //     age: 18,
+  //   },
+  //   {
+  //     name: "Sumiya",
+  //     age: "19",
+  //   },
+  // ];
+  // const filteredinfo = info.filter((element) => {
+  //   return element.age > 18;
+  // });
+  const fetchData = () => {
+    fetch("https://dev.to/api/articles")
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  };
+  const [count, setCount] = useState(10);
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div>
-      {/* <button onClick={handleClick}>{click}</button> */}
+      {/* <button onClick={handleClick}>{click}</button>
       {array.filter((element) => {
         return element > 2;
       })}
@@ -60,7 +68,10 @@ export const Home = () => {
         type="password"
         placeholder="******"
       ></input>
-      <input className="bg-transparent" type="number" placeholder="123"></input>
+      <input className="bg-transparent" type="number" placeholder="123"></input> */}
+      <button onClick={() => setCount(count + 1)}>
+        You clicked {count} times
+      </button>
     </div>
   );
 };
