@@ -12,7 +12,7 @@ export const Allblog = ({ inputValue }) => {
   };
   useEffect(() => {
     articleData();
-  }, [tag]);
+  }, [tag, count]);
   const pageNumbers = () => {
     setCount(count + 3);
   };
@@ -25,7 +25,7 @@ export const Allblog = ({ inputValue }) => {
   }
   return (
     <div className="mt-24 flex flex-col gap-8">
-      <h1 className="font-bold">All blog posts</h1>
+      <h1 className="font-bold text-2xl">All blog posts</h1>
       <div className="flex gap-10">
         <button onClick={() => setTag("")}>All</button>
         <button onClick={() => setTag("javacsript")}>Javascript</button>
@@ -41,6 +41,7 @@ export const Allblog = ({ inputValue }) => {
                 tags={article.tag_list[0]}
                 title={article.title}
                 date={article.published_at}
+                id={article.id}
               />
             </div>
           );

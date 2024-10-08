@@ -20,10 +20,13 @@ export const Blog = () => {
   };
 
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-full">
       <Header setInputValue={setInputValue} />
-      {filteredValue.length == 0}
-      <BlogContainer filteredValue={filteredValue} count={numbers} />
+      <div className="max-w-full flex justify-center">
+        <div className="max-w-7xl ">
+          <BlogContainer filteredValue={filteredValue} count={numbers} />
+        </div>
+      </div>
       <Footer />
     </div>
   );

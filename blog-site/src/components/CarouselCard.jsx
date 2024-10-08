@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Rightslide from "@/icons/Rightslide";
 import Leftslide from "@/icons/Leftslide";
+import moment from "moment";
 export const CarouselCard = () => {
   const [articles, setArticles] = useState([]);
   const [count, setCount] = useState(0);
@@ -46,7 +47,9 @@ export const CarouselCard = () => {
               </span>
               <p className="font-bold">{articles[count]?.title}</p>
             </div>
-            <p className="pt-6 pl-10 pb-10">{articles[count]?.published_at}</p>
+            <p className="pt-6 pl-10 pb-10">
+              {moment(articles[count]?.published_at).format("YYYY-MM-DD")}
+            </p>
           </div>
         </div>
       )}

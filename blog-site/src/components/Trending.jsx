@@ -13,7 +13,7 @@ export const Trending = () => {
 
   return (
     <div className="mt-24 flex flex-col gap-8">
-      <h1 className="font-bold">Trending</h1>
+      <h1 className="font-bold text-2xl">Trending</h1>
       <TrendingCard articles={articles} />
     </div>
   );

@@ -7,4 +7,3 @@ export const Chip = ({ count }) => {
     </div>
   );
 };
-2;

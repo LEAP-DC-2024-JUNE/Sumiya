@@ -3,11 +3,15 @@ import { useState } from "react";
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-full">
       <Header setInputValue={setInputValue} />
-      <CarouselCard />
-      <Trending />
-      <Allblog inputValue={inputValue} />
+      <div className="max-w-full flex flex-col items-center">
+        <div className="max-w-7xl">
+          <CarouselCard />
+          <Trending />
+          <Allblog inputValue={inputValue} />
+        </div>
+      </div>
       <Footer />
     </div>
   );
